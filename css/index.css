@@ -162,7 +162,7 @@ li {
 }
 
 .container {
-	width: 50%;
+	max-width: 800px;
 	padding: 50px;
 	padding-bottom: 0px;
 	padding-top: 10px;
@@ -176,7 +176,6 @@ nav {
 	margin: 0 auto;
 	margin-bottom: 20px;
 	padding: 0px 10px 0px 20px;
-	background: lightgrey;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -184,7 +183,7 @@ nav {
 	justify-content: space-between;
 }
 nav a {
-	color: white;
+	color: lightgrey;
 	text-decoration: none;
 	margin-right: 20px;
 }
@@ -211,8 +210,10 @@ header {
 	vertical-align: top;
 	padding-top: 60px;
 }
-.container .header img {
-	width: 100px;
+.header-img img {
+	width: 100%;
+	min-width: 100px;
+	height: auto;
 }
 
 .btn {
@@ -225,13 +226,12 @@ header {
 }
 
 .top-content p {
-	width: 40%;
-	margin-bottom: 20px;
 	display: inline;
 }
 
 .middle-img {
 	width: 100%;
+	height: auto;
 	margin-top: 35px;
 	margin-bottom: 35px;
 }
@@ -270,6 +270,7 @@ header {
 
 footer {
 	margin-top: 45px;
+	margin-bottom: 10px;
 	width: 100%;
 }
 .copyright {
@@ -278,10 +279,6 @@ footer {
 }
 
 /* CSS for Services Page begins here */
-
-.services-header-img {
-	width: 100%;
-}
 
 .services {
 	display: flex;
@@ -343,5 +340,48 @@ footer {
 }
 
 button {
-	border-radius: 6px;
+	border: 1px solid black;
+	background: white;
+	padding: 0px 40px 0px 40px;
+}
+
+/** Media Queries ***/
+@media screen and (max-width: 800px) {
+	.container {
+		padding: 20px;
+	}
+	.header-img {
+		display: none;
+	}
+
+	nav {
+		height: auto;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		padding: 0px 10px 0px 20px;
+		display: flex;
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.navLinks {
+		width: 100%;
+		height: auto;
+		margin-top: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.indexHeader {
+		padding-top: 0px;
+	}
+}
+
+/** End tablet view CSS media query **/
+
+/** Begin mobile view CSS media query **/
+@media screen and (max-width: 800px) {
 }
