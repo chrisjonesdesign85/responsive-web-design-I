@@ -4,19 +4,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -25,21 +93,34 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 body {
 	line-height: 1;
 }
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
@@ -50,18 +131,23 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
@@ -70,9 +156,9 @@ hr {
 }
 
 li {
-	  font-size: 14px;
-    margin-left: 10px;
-    list-style-type: circle;
+	font-size: 14px;
+	margin-left: 10px;
+	list-style-type: circle;
 }
 
 .container {
@@ -89,20 +175,18 @@ nav {
 	height: 65px;
 	margin: 0 auto;
 	margin-bottom: 20px;
-	padding:0px 10px 0px 20px;
+	padding: 0px 10px 0px 20px;
 	background: lightgrey;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: space-between;
-	
 }
 nav a {
-	color :white;
+	color: white;
 	text-decoration: none;
 	margin-right: 20px;
-
 }
 .indexHeader {
 	display: flex;
@@ -110,7 +194,7 @@ nav a {
 	padding-top: 45px;
 	margin-bottom: 45px;
 }
-header{
+header {
 	display: block;
 	justify-content: space-evenly;
 	margin: 0 auto;
@@ -119,7 +203,6 @@ header{
 .indexHeader h1 {
 	font-size: 62px;
 	text-align: center;
-
 }
 
 .header-text {
@@ -127,17 +210,14 @@ header{
 	width: 300px;
 	vertical-align: top;
 	padding-top: 60px;
-
 }
 .container .header img {
 	width: 100px;
-	
 }
 
 .btn {
 	text-align: center;
 }
-
 
 .top-content div {
 	width: 300px;
@@ -150,14 +230,11 @@ header{
 	display: inline;
 }
 
-
- .middle-img {
+.middle-img {
 	width: 100%;
 	margin-top: 35px;
 	margin-bottom: 35px;
 }
-
-
 
 .top-content {
 	display: flex;
@@ -174,15 +251,11 @@ header{
 	display: inline-block;
 }
 
-
-
 .bottom-content {
 	margin-bottom: 45px;
 	display: flex;
 	justify-content: space-evenly;
 }
-
-
 
 .bottom-p {
 	width: 200px;
@@ -198,13 +271,10 @@ header{
 footer {
 	margin-top: 45px;
 	width: 100%;
-	
-	
 }
 .copyright {
 	width: 200px;
 	margin: 0 auto;
-
 }
 
 /* CSS for Services Page begins here */
@@ -213,7 +283,7 @@ footer {
 	width: 100%;
 }
 
-.services{
+.services {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -221,11 +291,11 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
-	
+
 	border: 1px solid grey;
 }
 
-.box{
+.box {
 	width: 400px;
 	height: 200px;
 	margin: 20px 0px 20px 0px;
@@ -242,7 +312,6 @@ footer {
 	flex-flow: flex-start;
 	justify-content: space-around;
 }
-
 
 .info {
 	width: 50%;
@@ -264,17 +333,15 @@ footer {
 }
 
 .services button {
-background-color: white;
-  border: 1px solid black;
-  color: grey;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
-  
+	background-color: white;
+	border: 1px solid black;
+	color: grey;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px;
 }
 
-button {border-radius: 6px;}
-
-
-
+button {
+	border-radius: 6px;
+}
