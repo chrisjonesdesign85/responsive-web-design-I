@@ -382,6 +382,49 @@ button {
 
 /** End tablet view CSS media query **/
 
+
+
+
 /** Begin mobile view CSS media query **/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
+	.navLinks {
+		width: 100%;
+		height: auto;
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+    }
+    
+    
+
+	.navLinks a {
+		padding: 10px 60% 10px 60%;
+		margin: 0px;
+		border-bottom: 1px solid black;
+    }
+
+    .topLink { border-top: 1px solid black; }
+
+	section.top-content {
+		display: flex;
+		flex-direction: column;
+       
+    }
+
+    div.top-p{
+        width:100%;
+        margin-bottom: 20px;
+    }
+  
+	.bottom-content {
+		display: flex;
+		flex-direction: column;
+    }
+    
+    .bottom-p{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
